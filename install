@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+echo "dotfog bootstrapper for https://github.com/BraveHelyx"
+echo "Also, shout out to https://github.com/minight who is sybersec winning."
+
+# https://stackoverflow.com/questions/19622198/what-does-set-e-mean-in-a-bash-script.
+set -e
+
+# https://www.anishathalye.com/2014/08/03/managing-your-dotfiles/
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DOTBOT_DIR="dotbot"
+DOTBOT_BIN="bin/dotbot"
+DOTBOT_CONFIG="install.conf.yaml"
+
+# Update dotbot first
+cd "${BASEDIR}"
+git submodule update --init --recursive "${DOTBOT_DIR}"
+
+# Recursively update all modules
+git submodule update --init --recursive mod
+
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${DOTBOT_CONFIG}" "${@}"
+

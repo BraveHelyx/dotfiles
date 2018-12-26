@@ -1,0 +1,16 @@
+- defaults:
+    link:
+        relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.dotfiles:    ''
+    ~/.zalias:      mod/zsh/zalias
+    ~/.zshenv:      mod/zsh/prezto/runcoms/zshenv
+    ~/.zprofile:    mod/zsh/prezto/runcoms/zprofile
+    ~/.zshrc:       mod/zsh/prezto/runcoms/zshrc
+    ~/.zpreztorc:   mod/zsh/prezto/runcoms/zpreztorc
+    ~/.zlogin:      mod/zsh/prezto/runcoms/zlogin
+    ~/.zlogout:     mod/zsh/prezto/runcoms/zlogout
+
