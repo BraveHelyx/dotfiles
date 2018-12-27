@@ -5,10 +5,12 @@
 - clean: ['~']
 
 - link:
+    ~/.zalias:      cfg/zsh/prezto/zalias
+    ~/.zenviron:    cfg/zsh/prezto/zenviron
+
+- link:
     ~/.dotfiles:    ''
     ~/.zprezto:     mod/zsh/prezto
-    ~/.zalias:      mod/zsh/zalias
-    ~/.zenviron:    mod/zsh/zenviron
     ~/.zshenv:      mod/zsh/prezto/runcoms/zshenv
     ~/.zprofile:    mod/zsh/prezto/runcoms/zprofile
     ~/.zshrc:       mod/zsh/prezto/runcoms/zshrc

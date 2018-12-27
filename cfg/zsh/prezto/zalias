@@ -1,0 +1,8 @@
+# Some useful aliases by default
+alias reload="source ~/.zshrc"
+alias pcp="pwd | pbcopy"
+alias cdp="cd \"\$(pbpaste)\""
+alias lash="ls -lash"
+
+# Your personal aliases should be below
+# export example="echo $(echo Hello World!)"
