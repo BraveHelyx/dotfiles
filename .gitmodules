@@ -1,6 +1,9 @@
 [submodule "mod/fonts"]
-	path = mod/fonts
+	path = mod/bash/fonts
 	url = https://github.com/powerline/fonts
 [submodule "mod/zsh/prezto"]
 	path = mod/zsh/prezto
 	url = https://github.com/BraveHelyx/prezto
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
