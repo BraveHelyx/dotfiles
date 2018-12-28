@@ -20,6 +20,9 @@
     ~/.zlogin:      mod/zsh/prezto/runcoms/zlogin
     ~/.zlogout:     mod/zsh/prezto/runcoms/zlogout
 
+- shell:
+  - [mkdir -p ~/.vim, Creating ~/.vim]
+  - [mkdir -p ~/.vim/autoload, Creating ~/.vim/autoload]
+
 - link:
-    ~/.vim:                     mod/vim/vim
-    ~/.vim/autoload/plug.vim:   mod/vim/plugins/vim-plug/plug.vim
+    ~/.vim/autoload/plug.vim:   mod/vim/vim-plug/plug.vim
