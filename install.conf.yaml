@@ -5,11 +5,13 @@
 - clean: ['~']
 
 - link:
+    ~/.dotfiles:    ''
+
+- link:
     ~/.zalias:      cfg/zsh/prezto/zalias
     ~/.zenviron:    cfg/zsh/prezto/zenviron
 
 - link:
-    ~/.dotfiles:    ''
     ~/.zprezto:     mod/zsh/prezto
     ~/.zshenv:      mod/zsh/prezto/runcoms/zshenv
     ~/.zprofile:    mod/zsh/prezto/runcoms/zprofile
@@ -18,3 +20,6 @@
     ~/.zlogin:      mod/zsh/prezto/runcoms/zlogin
     ~/.zlogout:     mod/zsh/prezto/runcoms/zlogout
 
+- link:
+    ~/.vim:                     mod/vim/vim
+    ~/.vim/autoload/plug.vim:   mod/vim/plugins/vim-plug/plug.vim
