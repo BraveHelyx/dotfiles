@@ -1,3 +1,5 @@
 autoload -Uz promptinit
 promptinit
 prompt paradox
+
+. $HOME/.dotfiles/mod/z/z.sh

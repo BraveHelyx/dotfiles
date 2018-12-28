@@ -28,3 +28,6 @@
 - link:
     ~/.vimrc:                   cfg/vim/vimrc
     ~/.vim/autoload/plug.vim:   mod/vim/vim-plug/plug.vim
+
+- link:
+    ~/.fzf:                     mod/fzf

@@ -100,6 +100,8 @@ map Y y$
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
+" Extension of community vimrc below
+
 " Section for vim-plug
 call plug#begin('~/.vim/plugged')
 " Plugin that overrides vim modelines with securemodelines.

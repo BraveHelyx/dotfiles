@@ -21,15 +21,17 @@ Uses [dotbot](https://github.com/anishathalye/dotbot) as a means of tracking a r
 git clone https://github.com/BraveHelyx/dotfog
 cd dotfog
 ./install
-/bin/bash $HOME/.dotfiles/mod/bash/fonts/install.sh
+/bin/bash $HOME/.dotfiles/mod/zsh/fonts/install.sh
+~/.fzf/install
 chsh -s /bin/zsh
 ```
 
 ## Modules and Submodules
-* bash
-    * [Powerline Fonts](https://github.com/powerline/fonts)
+* [z](https://github.com/rupa/z)
+* [fzf](https://github.com/junegunn/fzf)
 * zsh
     * [BraveHelyx:zprezto](https://github.com/BraveHelyx/prezto)
+    * [Powerline Fonts](https://github.com/powerline/fonts)
 * vim
     * [vim-plug](https://github.com/junegunn/vim-plug)
         * [securemodelines](https://github.com/ciaranm/securemodelines)

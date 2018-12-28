@@ -1,5 +1,5 @@
 [submodule "mod/fonts"]
-	path = mod/bash/fonts
+	path = mod/zsh/fonts
 	url = https://github.com/powerline/fonts
 [submodule "mod/zsh/prezto"]
 	path = mod/zsh/prezto
@@ -10,3 +10,9 @@
 [submodule "mod/vim/vim-plug"]
 	path = mod/vim/vim-plug
 	url = https://github.com/junegunn/vim-plug
+[submodule "mod/z"]
+	path = mod/z
+	url = https://github.com/rupa/z
+[submodule "mod/fzf"]
+	path = mod/fzf
+	url = https://github.com/junegunn/fzf
