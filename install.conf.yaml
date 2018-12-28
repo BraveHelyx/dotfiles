@@ -23,6 +23,8 @@
 - shell:
   - [mkdir -p ~/.vim, Creating ~/.vim]
   - [mkdir -p ~/.vim/autoload, Creating ~/.vim/autoload]
+  - [mkdir -p ~/.vim/plugged, Creating ~/.vim/plugged]
 
 - link:
+    ~/.vimrc:                   cfg/vim/vimrc
     ~/.vim/autoload/plug.vim:   mod/vim/vim-plug/plug.vim
