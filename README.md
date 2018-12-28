@@ -4,8 +4,17 @@ Uses [dotbot](https://github.com/anishathalye/dotbot) as a means of tracking a r
 
 ## Dependencies
 * git
+* dotbot
 * zsh
 * vim
+
+## Features
+* Robust and idempotent deployment of dotfiles via dotbot.
+* Easy installation of Powerline Fonts (for `prompt`)
+* A minimally customized prezto fork for extensible zsh config management
+* vim-plug as vim's plugin manager.
+* Community recommended [vimrc](http://vim.wikia.com/wiki/Example_vimrc) (with vim-plug section) template.
+    * [securemodelines](https://github.com/ciaranm/securemodelines) override of vim's default 'modelines', managed by vim-plug.
 
 ## Installation / Deployment
 ```
