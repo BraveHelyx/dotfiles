@@ -8,8 +8,8 @@
     ~/.dotfiles:    ''
 
 - link:
-    ~/.zalias:      cfg/zsh/prezto/zalias
-    ~/.zenviron:    cfg/zsh/prezto/zenviron
+    ~/.zalias:      cfg/zsh/zalias
+    ~/.zenviron:    cfg/zsh/zenviron
 
 - link:
     ~/.zprezto:     mod/zsh/prezto

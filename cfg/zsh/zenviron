@@ -3,3 +3,6 @@ promptinit
 prompt paradox
 
 . $HOME/.dotfiles/mod/z/z.sh
+
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)
