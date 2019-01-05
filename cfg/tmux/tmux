@@ -1,0 +1,21 @@
+unbind C-b
+set -g prefix `
+bind-key ` send-prefix
+
+# Change keybinds for window splits
+unbind %
+unbind '"'
+bind | split-window -h
+bind - split-window -v
+
+# Add keybind for reloading tmux.conf
+bind r source-file ~/.tmux.conf
+
+# Vim style pane movements
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# Tmux buffer history
+set -g history-limit 31337

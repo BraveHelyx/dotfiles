@@ -7,11 +7,22 @@
 - link:
     ~/.dotfiles:    ''
 
+# i3
+- shell:
+  - [mkdir -p ~/.config, Creating ~/.config]
+  - [mkdir -p ~/.config/i3, Creating ~/.config/i3]
+
+- link:
+    ~/.config/i3/config:    cfg/i3/config
+
+# tmux
+- link:
+    ~/.tmux.conf:   cfg/tmux/tmux
+
+# zsh
 - link:
     ~/.zalias:      cfg/zsh/zalias
     ~/.zenviron:    cfg/zsh/zenviron
-
-- link:
     ~/.zprezto:     mod/zsh/prezto
     ~/.zshenv:      mod/zsh/prezto/runcoms/zshenv
     ~/.zprofile:    mod/zsh/prezto/runcoms/zprofile
@@ -20,6 +31,7 @@
     ~/.zlogin:      mod/zsh/prezto/runcoms/zlogin
     ~/.zlogout:     mod/zsh/prezto/runcoms/zlogout
 
+# vim
 - shell:
   - [mkdir -p ~/.vim, Creating ~/.vim]
   - [mkdir -p ~/.vim/autoload, Creating ~/.vim/autoload]
@@ -29,5 +41,6 @@
     ~/.vimrc:                   cfg/vim/vimrc
     ~/.vim/autoload/plug.vim:   mod/vim/vim-plug/plug.vim
 
+# fzf
 - link:
     ~/.fzf:                     mod/fzf
