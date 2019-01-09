@@ -107,6 +107,6 @@ call plug#begin('~/.vim/plugged')
 " Plugin that overrides vim modelines with securemodelines.
 Plug 'ciaranm/securemodelines'
 " Activate fzf in vim
-Plug '~/.fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install' }
 " Initialize plugin system
 call plug#end()

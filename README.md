@@ -4,9 +4,10 @@ Uses [dotbot](https://github.com/anishathalye/dotbot) as a means of tracking a r
 
 ## Dependencies
 * git
-* dotbot
 * zsh
 * vim
+* i3
+* tmux
 
 ## Features
 * Robust and idempotent deployment of dotfiles via dotbot.
@@ -22,12 +23,12 @@ git clone https://github.com/BraveHelyx/dotfog
 cd dotfog
 ./install
 /bin/bash $HOME/.dotfiles/mod/zsh/fonts/install.sh
-~/.fzf/install
 chsh -s /bin/zsh
 ```
 
 ## Modules and Submodules
 * [z](https://github.com/rupa/z)
+* [fz](https://github.com/changyuheng/fz)
 * [fzf](https://github.com/junegunn/fzf)
 * zsh
     * [BraveHelyx:zprezto](https://github.com/BraveHelyx/prezto)

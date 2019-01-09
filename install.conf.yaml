@@ -19,7 +19,11 @@
 - link:
     ~/.tmux.conf:   cfg/tmux/tmux
 
-# zsh
+# z, fz and fzf
+- link:
+    ~/.zfzfzf:      mod/zfzfzf
+
+# zs
 - link:
     ~/.zalias:      cfg/zsh/zalias
     ~/.zenviron:    cfg/zsh/zenviron
@@ -41,6 +45,5 @@
     ~/.vimrc:                   cfg/vim/vimrc
     ~/.vim/autoload/plug.vim:   mod/vim/vim-plug/plug.vim
 
-# fzf
-- link:
-    ~/.fzf:                     mod/fzf
+- shell:
+  - [vim +PlugInstall +qall, Installing vim plugins]

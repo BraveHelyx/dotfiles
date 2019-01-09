@@ -11,8 +11,14 @@
 	path = mod/vim/vim-plug
 	url = https://github.com/junegunn/vim-plug
 [submodule "mod/z"]
-	path = mod/z
+	path = mod/zfzfzf/z
 	url = https://github.com/rupa/z
 [submodule "mod/fzf"]
-	path = mod/fzf
+	path = mod/zfzfzf/fzf
 	url = https://github.com/junegunn/fzf
+[submodule "mod/zfzfzf/fz"]
+	path = mod/zfzfzf/fz
+	url = https://github.com/changyuheng/fz
+[submodule "mod/zsh/zsh-completions"]
+	path = mod/zsh/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
