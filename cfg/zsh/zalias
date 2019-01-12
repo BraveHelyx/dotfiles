@@ -7,3 +7,11 @@ alias lash="ls -lash"
 # Your personal aliases should be below
 alias venvA="source env/bin/activate"
 alias venvD="deactivate"
+
+## Aliases for the github.com/sharkdp/fd.
+alias fd="fdfind"
+
+## Aliases for github.com/DaveDavenport/rofi
+alias rofiR="rofi -show run"
+alias rofiS="rofi -show ssh"
+alias rofiW="rofi -show window"

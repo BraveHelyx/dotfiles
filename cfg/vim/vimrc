@@ -98,15 +98,45 @@ map Y y$
 
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
-nnoremap <C-L> :nohl<CR><C-L>
+" nnoremap <C-L> :nohl<CR><C-L>
 
 " Extension of community vimrc below
+" Easier split window navigation in vim
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
-" Section for vim-plug
+" vvvv Section begin for vim-plug vvvv
 call plug#begin('~/.vim/plugged')
-" Plugin that overrides vim modelines with securemodelines.
+" Add more sophisticated vim macros for multi-cursor
+Plug 'terryma/vim-multiple-cursors'
+" Plugin that overrides vim modelines with securemodelines
 Plug 'ciaranm/securemodelines'
-" Activate fzf in vim
+" Activate fzf to system and vim via vim
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install' }
+" Prettyier vim status-line.
+Plug 'itchyny/lightline.vim'
+" Nerdtree, only loaded on-demand.
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+" Bracket/Parenthesis macros and keymappings
+Plug 'tpope/vim-surround'
+" UNIX shell commands as vim commands
+Plug 'tpope/vim-eunuch'
 " Initialize plugin system
 call plug#end()
+" ^^^^ Section end for vim-plug ^^^^^
+
+" vvvv vim-plug plugin specific configuration below vvvv
+" NERDTree Plugin
+map <C-o> :NERDTreeToggle<CR>
+" vim-multiple-cursors Plugin
+" let g:multi_cursor_use_default_mapping=0 " Clear default
+" let g:multi_cursor_start_word_key         = '<C-n>'
+" let g:multi_cursor_select_all_word_key    = '<A-n>'
+" let g:multi_cursor_start_key              = 'g<C-n>'
+" let g:multi_cursor_select_all_key         = 'g<A-n>'
+" let g:multi_cursor_next_key               = '<C-n>'
+" let g:multi_cursor_prev_key               = '<C-p>'
+" let g:multi_cursor_skip_key               = '<C-x>'
+" let g:multi_cursor_quit_key               = '<Esc>'
