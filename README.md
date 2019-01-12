@@ -1,23 +1,28 @@
 # Dotfog
 Easily deployed dotfile bootstrap. 
-Uses [dotbot](https://github.com/anishathalye/dotbot) as a means of tracking a robust deployment of my own dotfiles.
+Uses [dotbot](https://github.com/anishathalye/dotbot) as a means of bundling a robust deployment of my own dotfiles.
 
 ## Dependencies
+### Required
 * git
 * zsh
 * vim
 * i3
 * tmux
 
+### Optional
+* rofi (Defined in cfg/i3/config and cfg/zsh/zalias)
+* fd-find (Defined in cfg/zsh/zalias)
+
 ## Features
 ### Zshell
 * Robust and idempotent deployment of dotfiles via dotbot.
 * Easy installation of Powerline Fonts (for `prompt`)
 * A minimally customized prezto fork for extensible zsh config management
-    * [denysdovhan/spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt.git)
+
 ### Vim
 * Community recommended [vimrc](http://vim.wikia.com/wiki/Example_vimrc) (with vim-plug section) template.
-* Installs/Uses vim-plug as vim's plugin manager.
+* Installs vim-plug as vim's plugin manager.
 
 
 ## Installation / Deployment
@@ -34,10 +39,10 @@ chsh -s /bin/zsh
 * [changyuheng/fz](https://github.com/changyuheng/fz)
 * zsh
     * [bravehelyx/prezto](https://github.com/bravehelyx/prezto)
+        * [denysdovhan/spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt.git)
     * [powerline/fonts](https://github.com/powerline/fonts)
 * vim
     * [vim-plug](https://github.com/junegunn/vim-plug)
-        * [securemodelines](https://github.com/ciaranm/securemodelines)
         * [terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
         * [ciaranm/securemodelines](https://github.com/ciaranm/securemodelines) override of vim's default 'modelines', managed by vim-plug.
         * [junegunn/fzf](https://github.com/junegunn/fzf)

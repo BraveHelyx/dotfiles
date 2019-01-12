@@ -114,7 +114,8 @@ Plug 'terryma/vim-multiple-cursors'
 " Plugin that overrides vim modelines with securemodelines
 Plug 'ciaranm/securemodelines'
 " Activate fzf to system and vim via vim
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install -all' }
+Plug 'junegunn/fzf.vim'
 " Prettyier vim status-line.
 Plug 'itchyny/lightline.vim'
 " Nerdtree, only loaded on-demand.
