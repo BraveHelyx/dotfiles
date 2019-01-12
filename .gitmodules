@@ -13,9 +13,6 @@
 [submodule "mod/z"]
 	path = mod/zfzfzf/z
 	url = https://github.com/rupa/z
-[submodule "mod/fzf"]
-	path = mod/zfzfzf/fzf
-	url = https://github.com/junegunn/fzf
 [submodule "mod/zfzfzf/fz"]
 	path = mod/zfzfzf/fz
 	url = https://github.com/changyuheng/fz

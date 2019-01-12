@@ -19,9 +19,15 @@
 - link:
     ~/.tmux.conf:   cfg/tmux/tmux
 
-# z, fz and fzf
+# z, fz
+- shell:
+  - [mkdir -p ~/.zfzfzf, Creating ~/.zfzfzf]
+
+- clean: ['~/.zfzfzf']
+
 - link:
-    ~/.zfzfzf:      mod/zfzfzf
+    ~/.zfzfzf/z:    mod/zfzfzf/z
+    ~/.zfzfzf/fz:   mod/zfzfzf/fz
 
 # zsh
 - link:
@@ -46,4 +52,5 @@
     ~/.vim/autoload/plug.vim:   mod/vim/vim-plug/plug.vim
 
 - shell:
+  - [vim +PlugClean +qall, Cleaning undeclared or undefined vim plugins]
   - [vim +PlugInstall +qall, Installing vim plugins]
