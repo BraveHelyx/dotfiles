@@ -9,7 +9,7 @@ fi
 # Configure the prompt
 autoload -Uz promptinit
 promptinit
-prompt paradox
+prompt spaceship
 
 # Enable autocorrections for zsh
 ENABLE_CORRECTION="true"
