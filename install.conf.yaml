@@ -23,7 +23,7 @@
 - link:
     ~/.zfzfzf:      mod/zfzfzf
 
-# zs
+# zsh
 - link:
     ~/.zalias:      cfg/zsh/zalias
     ~/.zenviron:    cfg/zsh/zenviron
