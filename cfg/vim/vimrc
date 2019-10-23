@@ -124,6 +124,8 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-surround'
 " UNIX shell commands as vim commands
 Plug 'tpope/vim-eunuch'
+" Vim code completions
+Plug 'Valloric/YouCompleteMe'
 " Initialize plugin system
 call plug#end()
 " ^^^^ Section end for vim-plug ^^^^^

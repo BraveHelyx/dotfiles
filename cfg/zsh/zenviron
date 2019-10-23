@@ -31,3 +31,18 @@ PATH=$PATH:$HOME/.local/bin
 ## Configure fzf
 export FZF_DEFAULT_OPS="--extended"
 
+## Configure virtualenvwrapper
+source /home/noone/.local/bin/virtualenvwrapper.sh
+
+## Macros for armory
+export ARMORY_HOME=$HOME/.armory
+
+disarmory() {
+    cat $ARMORY_HOME/settings.ini | grep "base_path"
+}
+
+charmory() {
+    if [[ $# -eq 1 ]]; then
+        sed -i 's@base_path =.*@base_path = '"${HOME}/Documents/bounty/$1"'@' $ARMORY_HOME/settings.ini
+    fi
+}

@@ -15,3 +15,5 @@ alias fd="fdfind"
 alias rofiR="rofi -show run"
 alias rofiS="rofi -show ssh"
 alias rofiW="rofi -show window"
+
+alias resizeV1="xrandr --output Virtual1 --mode 1440x900"

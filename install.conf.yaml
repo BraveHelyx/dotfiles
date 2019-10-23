@@ -15,8 +15,23 @@
 - link:
     ~/.config/i3/config:    cfg/i3/config
 
-# tmux
+# compton
+- shell:
+  - [mkdir -p ~/.config/compton, Creating ~/.config/compton]
+
 - link:
+    ~/.config/compton/compton.conf: cfg/compton/config
+
+# urxvt
+- link:
+    ~/.Xresources:  cfg/urxvt/config
+
+# tmux
+- shell:
+  - [mkdir -p ~/.config/tmux, Creating ~/.config/tmux]
+
+- link:
+    ~/.config/tmux/powerline-double-blue.tmuxtheme:    cfg/tmux/tmux-powerline-double-blue.tmuxtheme
     ~/.tmux.conf:   cfg/tmux/tmux
 
 # z, fz
