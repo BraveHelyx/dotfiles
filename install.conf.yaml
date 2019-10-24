@@ -15,6 +15,10 @@
 - link:
     ~/.config/i3/config:    cfg/i3/config
 
+# polybar
+- link:
+    ~/.config/polybar:      mod/polybar/polybar-themes/polybar-6
+
 # compton
 - shell:
   - [mkdir -p ~/.config/compton, Creating ~/.config/compton]

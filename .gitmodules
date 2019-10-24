@@ -19,3 +19,6 @@
 [submodule "mod/zsh/zsh-completions"]
 	path = mod/zsh/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "mod/polybar/polybar-themes"]
+	path = mod/polybar/polybar-themes
+	url = https://github.com/adi1090x/polybar-themes.git

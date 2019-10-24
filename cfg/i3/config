@@ -205,3 +205,7 @@ gaps inner 30
 smart_gaps on
 smart_borders on
 
+# Autoexecs
+exec_always --no-startup-id feh --bg-fill ~/Pictures/bg/asriel2_1920x1080.jpg
+exec_always --no-startup-id $HOME/.config/compton/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
