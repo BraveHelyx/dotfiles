@@ -227,5 +227,6 @@ xrender-sync-fence = true;
 
 # Opacity
 opacity-rule = [
+    "95:class_g = 'URxvt' && focused",
     "80:class_g = 'URxvt' && !focused"
 ];
