@@ -17,3 +17,27 @@ alias rofiS="rofi -show ssh"
 alias rofiW="rofi -show window"
 
 alias resizeV1="xrandr --output Virtual1 --mode 1440x900"
+
+################
+# Macros Below #
+################
+
+# UNIX Macros
+addalias() { 
+    if [[ $# -eq 2 ]]; then
+        echo "alias $1=\"$2\"" >> $HOME/.zalias;
+        source $HOME/.zalias;
+    else 
+        echo "addalias <alias> <value>"
+    fi
+    }
+mkcd() { mkdir $1 && cd $1; }
+cdls() { cd $1 && ls }
+
+if [[ -e ~/.balias ]]; then
+    source ~/.balias
+fi
+
+#######################
+# Added Aliases Below #
+#######################

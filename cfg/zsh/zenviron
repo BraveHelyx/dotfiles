@@ -20,29 +20,27 @@ ENABLE_CORRECTION="true"
 PATH=$PATH:/usr/local/go/bin
 
 ## Add golang's bin directory to path
-export GOPATH=$(go env GOPATH)
-[[ ":$PATH:" != *":$GOPATH/bin:"* ]] && 
-PATH=$PATH:$GOPATH/bin
+if [ -x "$(command -v go)" ]; then
+    export GOPATH=$(go env GOPATH)
+    [[ ":$PATH:" != *":$GOPATH/bin:"* ]] && 
+    PATH=$PATH:$GOPATH/bin
+fi
 
 # Configuration for Virtualenv
 [[ ":$PATH:" != *":$HOME/.local/bin"* ]] &&
 PATH=$PATH:$HOME/.local/bin
 
+## Configure virtualenvwrapper
+if [ -x "$HOME/.local/bin/virtualenvwrapper.sh" ]; then
+    source /home/noone/.local/bin/virtualenvwrapper.sh
+else
+    echo "Couldn't source $HOME/.local/bin/virtualenvwrapper.sh"
+fi
+
 ## Configure fzf
 export FZF_DEFAULT_OPS="--extended"
 
-## Configure virtualenvwrapper
-source /home/noone/.local/bin/virtualenvwrapper.sh
 
-## Macros for armory
+## Set Armory for armory
 export ARMORY_HOME=$HOME/.armory
 
-disarmory() {
-    cat $ARMORY_HOME/settings.ini | grep "base_path"
-}
-
-charmory() {
-    if [[ $# -eq 1 ]]; then
-        sed -i 's@base_path =.*@base_path = '"${HOME}/Documents/bounty/$1"'@' $ARMORY_HOME/settings.ini
-    fi
-}

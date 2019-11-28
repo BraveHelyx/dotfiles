@@ -40,6 +40,7 @@
 
 # z, fz
 - shell:
+  - [touch ~/.z, Touching ~/.z]
   - [mkdir -p ~/.zfzfzf, Creating ~/.zfzfzf]
 
 - clean: ['~/.zfzfzf']
@@ -73,3 +74,13 @@
 - shell:
   - [vim +PlugClean +qall, Cleaning undeclared or undefined vim plugins]
   - [vim +PlugInstall +qall, Installing vim plugins]
+
+# nvim
+- shell:
+  - [mkdir -p ~/.config/nvim, Creating ~/.config/nvim]
+  - [mkdir -p ~/.config/nvim/autoload, Creating ~/.config/nvim/autoload]
+  - [mkdir -p ~/.config/nvim/plugged, Creating ~/.config/nvim/plugged]
+
+- link:
+    ~/.config/nvim/init.vim:    cfg/vim/vimrc
+    ~/.config/nvim/autoload/plug.vim:   mod/vim/vim-plug/plug.vim

@@ -1,4 +1,4 @@
-# Dotfog
+# Dotfiles
 Easily deployed dotfile bootstrap. 
 Uses [dotbot](https://github.com/anishathalye/dotbot) as a means of bundling a robust deployment of my own dotfiles.
 
@@ -7,12 +7,14 @@ Uses [dotbot](https://github.com/anishathalye/dotbot) as a means of bundling a r
 * git
 * zsh
 * vim
-* i3
+* i3-gaps
 * tmux
 
 ### Optional
 * rofi (Defined in cfg/i3/config and cfg/zsh/zalias)
 * fd-find (Defined in cfg/zsh/zalias)
+* compton
+* polybar
 
 ## Features
 ### Zshell
@@ -27,8 +29,8 @@ Uses [dotbot](https://github.com/anishathalye/dotbot) as a means of bundling a r
 
 ## Installation / Deployment
 ```
-git clone https://github.com/BraveHelyx/dotfog
-cd dotfog
+git clone https://github.com/BraveHelyx/dotfiles ~/.dotfiles
+cd ~/.dotfiles
 ./install
 /bin/bash $HOME/.dotfiles/mod/zsh/fonts/install.sh
 chsh -s /bin/zsh
