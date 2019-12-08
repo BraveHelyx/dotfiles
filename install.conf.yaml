@@ -75,6 +75,7 @@
   - [vim +PlugClean +qall, Cleaning undeclared or undefined vim plugins]
   - [vim +PlugInstall +qall, Installing vim plugins]
 
+
 # nvim
 - shell:
   - [mkdir -p ~/.config/nvim, Creating ~/.config/nvim]

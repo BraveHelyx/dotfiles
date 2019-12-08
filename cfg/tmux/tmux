@@ -6,7 +6,7 @@ bind-key ` send-prefix
 # Change keybinds for window splits
 unbind %
 unbind '"'
-bind \ split-window -h
+bind \\ split-window -h
 bind - split-window -v
 
 # Add keybind for reloading tmux.conf
